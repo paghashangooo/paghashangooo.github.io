@@ -1,3 +1,5 @@
 layout: page
 title: "PAGHASHANGOOO"
-permalink: /PATH
+permalink: /PATH/
+
+Hi
