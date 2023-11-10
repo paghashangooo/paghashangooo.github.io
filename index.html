@@ -1,1 +1,60 @@
-"Hello World!" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style>
+        /* Style for the FAQ items */
+        .faq-item {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        /* Style for the collapsed content */
+        .faq-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Frequently Asked Questions</h1>
+    
+    <div class="faq-item">
+        <h2>Question 1: What is Lorem Ipsum?</h2>
+        <div class="faq-content">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <h2>Question 2: Why do we use it?</h2>
+        <div class="faq-content">
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <h2>Question 3: Where can I get some?</h2>
+        <div class="faq-content">
+            <p>There are many variations of passages of Lorem Ipsum available.</p>
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+    </div>
+
+    <script>
+        // Add click event listeners to each FAQ item
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const content = item.querySelector('.faq-content');
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
